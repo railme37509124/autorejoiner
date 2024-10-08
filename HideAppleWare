@@ -1,0 +1,8 @@
+core = game.CoreGui
+appleware = core["AppleWare iOS"]
+showbutton = appleware:FindFirstChildWhichIsA("ImageButton")
+mainframe = appleware:FindFirstChildWhichIsA("Frame")
+showbutton.Visible = true
+showbutton.ImageTransparency = 0
+showbutton.BackgroundTransparency = 0
+mainframe.Visible = false
