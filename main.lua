@@ -9,7 +9,7 @@ if (hideaw) then
    loadstring(game:HttpGet("https://raw.githubusercontent.com/railme3750914/autorejoiner/main/HideAppleWare"))()
 end
 
-queue_on_teleport("getgenv().Xminutes="..mins..";getgenv().KickInstead="..kickinstead..";getgenv().HideAppleWareUI="..tostring(hideaw)..[[;loadstring(game:HttpGet("https://raw.githubusercontent.com/railme3750914/autorejoiner/main/hideappleware.lua"))()]])
+queue_on_teleport("getgenv().Xminutes="..mins..";getgenv().KickInstead="..tostring(kickinstead)..";getgenv().HideAppleWareUI="..tostring(hideaw)..[[;loadstring(game:HttpGet("https://raw.githubusercontent.com/railme3750914/autorejoiner/main/hideappleware.lua"))()]])
 
 while task.wait(1) do
    if (tick() - t > 60 * mins then
@@ -20,3 +20,4 @@ while task.wait(1) do
       end
    end
 end
+game.StarterGui:SetCore("SendNotification", {Title="Activated"Text="Auto Rejoin is now working with your settings!"Duration=5})
