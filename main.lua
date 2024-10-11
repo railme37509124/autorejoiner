@@ -3,7 +3,7 @@
 repeat task.wait() until game:IsLoaded()
 
 queue_on_teleport("loadstring(game:HttpGet(\"https://raw.githubusercontent.com/railme37509124/autorejoiner/main/main.lua\"))()")
-Mins = 120 -- 2 hrs
+Mins = 135 -- 2 hrs 15 mins
 loadstring(game:HttpGet("https://raw.githubusercontent.com/railme37509124/autorejoiner/main/HideAppleWare"))()
 game.StarterGui:SetCore("SendNotification", {
    Title = "Active",
