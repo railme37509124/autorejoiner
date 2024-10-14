@@ -6,4 +6,4 @@ for i, v in game:GetDescendants() do
     end
   end
 end
-atlas.Visible = false
+atlas.Position = UDim2.new(0, atlas.Position.X.Offset, 0.95, 0)
