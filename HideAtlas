@@ -1,7 +1,7 @@
 atlas = nil
 for i, v in game:GetDescendants() do
   if v:IsA("TextLabel") then
-    if v.Text == "Atlas Beta v0.9" then
+    if v.Text:find("Atlas Beta") then
       atlas = v.Parent.Parent
     end
   end
