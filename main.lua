@@ -8,7 +8,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/railme37509124/autore
 loadstring(game:HttpGet("https://raw.githubusercontent.com/railme37509124/autorejoiner/main/HideAtlas"))()
 game.StarterGui:SetCore("SendNotification", {
    Title = "Active",
-   Text = "Successfully enabled! (per "..Mins.." minutes) | 001",
+   Text = "Successfully enabled! (per "..Mins.." minutes) | 002",
    Duration = 5
 })
 wait(60*Mins)
