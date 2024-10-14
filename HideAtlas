@@ -1,9 +1,12 @@
 atlas = nil
-for i, v in game:GetDescendants() do
+game.CoreGui.ChildAdded:Connect(function(vv)
+wait(1)
+for i, v in vv:GetDescendants() do
   if v:IsA("TextLabel") then
     if v.Text:find("Atlas Beta") then
       atlas = v.Parent.Parent
+      atlas.Position = UDim2.new(0, atlas.Position.X.Offset, 0.95, 0)
     end
   end
 end
-atlas.Position = UDim2.new(0, atlas.Position.X.Offset, 0.95, 0)
+end)
